@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import logger from "@/app/utils/logger";
 import { rateLimiter } from "@/app/lib/rateLimit";
-import { getClientIp } from "@/app/lib/auditLogger";
+import { getClientIp } from "@/app/lib/apiHelpers";
 import {
   unauthorized,
   tooManyRequests,

@@ -3,7 +3,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import logger from "@/app/utils/logger";
 import { rateLimiter } from "@/app/lib/rateLimit";
-import { getClientIp } from "@/app/lib/auditLogger";
+import { getClientIp } from "@/app/lib/apiHelpers";
 import { tooManyRequests } from "@/app/lib/apiHelpers";
 
 export async function POST(request: NextRequest) {

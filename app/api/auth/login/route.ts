@@ -7,7 +7,7 @@ import logger from "@/app/utils/logger";
 import { rateLimiter } from "@/app/lib/rateLimit";
 import { loginSchema } from "@/app/lib/validation";
 import { z } from "zod";
-import { getClientIp } from "@/app/lib/auditLogger";
+import { getClientIp } from "@/app/lib/apiHelpers";
 
 async function writeAuditLog(params: {
   centerId: string;
