@@ -36,6 +36,8 @@ export function useAnalytics() {
 
   const fetchAnalytics = async () => {
     try {
+      setError(null);
+      setLoading(true);
       const response = await apiFetch("/api/analytics");
       setData(response);
     } catch (err: any) {
